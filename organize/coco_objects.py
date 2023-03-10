@@ -50,10 +50,7 @@ for image_name in os.listdir(image_path):
                     num+=1
 
                 else:
-                    mask_zeros = np.zeros_like(image_arr)
-                    cv2.imwrite(f'{dst_path}/3_{count}_{image_name[:-4]}.png', mask_zeros)
-                    # print(numbre)
                     numbre+=1
 
-            print(f'Number of black masks : {numbre}')
+            print(f'Number of empty masks : {numbre}')
             print(f'Number of normal masks : {num}') 
